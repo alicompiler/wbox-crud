@@ -6,6 +6,7 @@ export interface ModuleConfiguration {
     title: string;
     type: ModuleType;
     navigationType: ModuleNavigationType;
+    route?: string;
     factoryOption: unknown;
     factory?: unknown;
 }
