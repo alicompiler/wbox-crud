@@ -34,7 +34,6 @@ root.render(
                 options: {},
                 title: 'Create'
             }
-        ]}
-              route="/"/>
+        ]}/>
     </React.StrictMode>
 );

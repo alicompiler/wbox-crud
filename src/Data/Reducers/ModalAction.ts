@@ -1,5 +1,4 @@
 import {Action} from "wbox-context";
-import {ModuleConfiguration} from "../../Modules/ModuleConfiguration";
 
 export enum ModalActionType {
     OPEN = "ModalAction@Open",
@@ -9,10 +8,10 @@ export enum ModalActionType {
 export type ModalAction<TPayload> = Action<ModalActionType, TPayload>;
 
 export class ModalActions {
-    public static open(module: ModuleConfiguration): ModalAction<ModuleConfiguration> {
+    public static open(moduleName: string): ModalAction<string> {
         return {
             type: ModalActionType.OPEN,
-            payload: module
+            payload: moduleName
         };
     }
 
