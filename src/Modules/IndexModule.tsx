@@ -5,6 +5,6 @@ interface Props {
     module: ModuleConfiguration;
 }
 
-export function FormModule({module}: Props) {
-    return <h1>Form Module: {module.name} - {module.title}</h1>
+export function IndexModule({module}: Props) {
+    return <h1>Main Module: {module.name} - {module.title}</h1>
 }

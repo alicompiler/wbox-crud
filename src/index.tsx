@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {Crud} from "./Crud/Crud";
-import {ModuleType} from "./Data/Types/ModuleType";
+import {ModuleType} from "./Modules/ModuleType";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -16,7 +16,7 @@ root.render(
                 title: 'Test Index Page',
                 type: ModuleType.MAIN,
                 factory: undefined,
-                factoryOption: {}
+                options: {}
             },
             {
                 route: '/details',
@@ -25,13 +25,13 @@ root.render(
                 title: 'Details',
                 type: ModuleType.INFO,
                 factory: undefined,
-                factoryOption: {}
+                options: {}
             },
             {
                 name: 'create',
                 navigationType: 'modal',
                 type: ModuleType.FORM,
-                factoryOption: {},
+                options: {},
                 title: 'Create'
             }
         ]}

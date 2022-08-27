@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom";
 import {useDispatch} from "wbox-context";
-import {ModuleConfiguration} from "../Data/Types/ModuleConfiguration";
+import {ModuleConfiguration} from "../Modules/ModuleConfiguration";
 import {ModalActions} from "../Data/Reducers/ModalAction";
 
 export const useCrudNavigation = () => {

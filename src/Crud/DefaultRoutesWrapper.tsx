@@ -1,7 +1,7 @@
 import {Route, Routes} from "react-router-dom";
 import React from "react";
 import {CrudProps} from "./CrudProps";
-import {ModuleConfiguration} from "../Data/Types/ModuleConfiguration";
+import {ModuleConfiguration} from "../Modules/ModuleConfiguration";
 import {useCrudNavigation} from "../Navigation/UseCrudNavigation";
 
 

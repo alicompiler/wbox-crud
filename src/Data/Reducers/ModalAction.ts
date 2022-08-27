@@ -1,5 +1,5 @@
 import {Action} from "wbox-context";
-import {ModuleConfiguration} from "../Types/ModuleConfiguration";
+import {ModuleConfiguration} from "../../Modules/ModuleConfiguration";
 
 export enum ModalActionType {
     OPEN = "ModalAction@Open",

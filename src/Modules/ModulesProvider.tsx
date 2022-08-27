@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import {ModuleConfiguration} from "../Data/Types/ModuleConfiguration";
+import {ModuleConfiguration} from "./ModuleConfiguration";
 
 
 export const ModulesContext = React.createContext<ModuleConfiguration[]>([]);

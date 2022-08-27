@@ -1,5 +1,12 @@
-import {ModuleType} from "./ModuleType";
-import {ModuleNavigationType} from "./ModuleNavigationType";
+export type ModuleNavigationType = "modal" | "page";
+
+export enum ModuleType {
+    FORM,
+    COLLECTION,
+    INFO,
+    ACTION,
+    MAIN
+}
 
 export interface ModuleConfiguration {
     name: string;
@@ -7,6 +14,6 @@ export interface ModuleConfiguration {
     type: ModuleType;
     navigationType: ModuleNavigationType;
     route?: string;
-    factoryOption: unknown;
+    options?: unknown;
     factory?: unknown;
 }

@@ -1,7 +1,7 @@
 import {Reducer} from "wbox-context";
 import {State} from "../State";
 import {ModalAction, ModalActionType} from "./ModalAction";
-import {ModuleConfiguration} from "../Types/ModuleConfiguration";
+import {ModuleConfiguration} from "../../Modules/ModuleConfiguration";
 
 export const modalReducer: Reducer<State, ModalAction<unknown>> = (state, action) => {
     switch (action.type) {
