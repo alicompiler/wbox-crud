@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {Crud} from "./Crud/Crud";
-import {ModuleType} from "./Modules/ModuleType";
+import {ModuleType} from "./Modules/ModuleConfiguration";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement

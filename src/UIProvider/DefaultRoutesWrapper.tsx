@@ -1,6 +1,5 @@
 import {Route, Routes} from "react-router-dom";
 import React from "react";
-import {CrudProps} from "./CrudProps";
 import {ModuleConfiguration} from "../Modules/ModuleConfiguration";
 import {useCrudNavigation} from "../Navigation/UseCrudNavigation";
 
@@ -19,8 +18,7 @@ function DummyPage({modules, module}: { modules: ModuleConfiguration[] , module:
 }
 
 
-export function DefaultRoutesWrapper({curdProps} : {curdProps: CrudProps}) {
-    const {modules} = curdProps;
+export function DefaultRoutesWrapper({modules} : {modules: ModuleConfiguration[]}) {
     return <Routes>
         {
             modules.filter(module => module.navigationType === "page")

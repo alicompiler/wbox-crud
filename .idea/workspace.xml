@@ -4,7 +4,12 @@
     <list default="true" id="a3effc81-611b-4bf8-8163-def3e9ed9ad9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Crud/Crud.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crud/Crud.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/State.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/State.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Crud/CrudProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crud/CrudProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Crud/DefaultRoutesWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UIProvider/DefaultRoutesWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Defaults/DefaultsContext.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FactoryProvider/FactoryProvider.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UIProvider/DefaultModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +54,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/UIProvider" />
       <recent name="$PROJECT_DIR$/src/Modules" />
       <recent name="$PROJECT_DIR$/src/Data" />
     </key>
@@ -61,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660411227079</updated>
-      <workItem from="1660411230940" duration="28906000" />
+      <workItem from="1660411230940" duration="31358000" />
     </task>
     <servers />
   </component>
