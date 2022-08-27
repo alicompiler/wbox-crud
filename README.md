@@ -12,12 +12,13 @@
 
 ## Structure
 
-    <Router>
-        <ModalProvider>
-            <Routes />
-            <Modal />
-        </ModalProvider>
-    </Router>
+
+    <ModulesProvider>
+        <UIProvider>
+            
+        </UIProvider>
+    </ModulesProvider>
+
 
 
 

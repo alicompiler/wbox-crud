@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3effc81-611b-4bf8-8163-def3e9ed9ad9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Crud/Crud.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crud/Crud.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Crud/CrudProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crud/CrudProps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/Types/ModuleType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Types/ModuleType.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FactoryProvider/FactoryProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FactoryProvider/FactoryProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/FormModule.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/FormModule.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660411227079</updated>
-      <workItem from="1660411230940" duration="22151000" />
+      <workItem from="1660411230940" duration="25012000" />
     </task>
     <servers />
   </component>
