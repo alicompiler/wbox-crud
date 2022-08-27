@@ -18,3 +18,10 @@
             <Modal />
         </ModalProvider>
     </Router>
+
+
+
+## Navigation
+
+    const { navigate } = useCrudNavigator();
+    navigate({});

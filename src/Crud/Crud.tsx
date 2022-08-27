@@ -1,29 +1,22 @@
 import React from "react";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import {CoreProvider} from "wbox-context";
 import {modalReducer} from "../Data/Reducers/ModalReducer";
-import {Modal} from "../Modal/Modal";
 import {CrudProps} from "./CrudProps";
+import {useDefaults} from "../Defaults/DefaultsContext";
+
 
 export function Crud(props: CrudProps) {
-    const {modules} = props;
+    const defaults = useDefaults();
+    const routesWrapper = props.routesWrapper ?? defaults.routesWrapper;
+    const modalWrapper = props.modalWrapper ?? defaults.modalWrapper;
     return <BrowserRouter>
         <CoreProvider createServiceFactory={() => null}
                       reducers={[modalReducer]}
-                      initialState={{
-                          modal: undefined
-                      }}>
+                      initialState={{modal: undefined}}>
             <h1>wbox-crud</h1>
-            <Routes>
-                {
-                    modules.filter(module => module.navigationType === "page")
-                        .map(module => <Route key={module.name}
-                                              path={module.route!}
-                                              element={<h1>TODO: display module</h1>}
-                        />)
-                }
-            </Routes>
-            <Modal/>
+            {routesWrapper(props)}
+            {modalWrapper(props)}
         </CoreProvider>
     </BrowserRouter>
 }
