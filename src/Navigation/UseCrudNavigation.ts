@@ -10,7 +10,7 @@ export const useCrudNavigation = () => {
         if (module.navigationType === "page") {
             pageNavigate(module.route!);
         } else if (module.navigationType === "modal") {
-            dispatch(ModalActions.open(module));
+            dispatch(ModalActions.open(module.name));
         } else {
             throw new Error(`unknown navigation type: ${module.navigationType}`);
         }
