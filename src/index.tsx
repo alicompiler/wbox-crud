@@ -23,7 +23,7 @@ root.render(
                 navigationType: 'page',
                 name: 'details',
                 title: 'Details',
-                type: ModuleType.INFO,
+                type: ModuleType.DETAILS,
                 factory: undefined,
                 options: {}
             },

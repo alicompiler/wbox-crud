@@ -18,7 +18,7 @@ export function Module({name}: Props) {
             return <IndexModule module={module}/>;
         case ModuleType.FORM:
             return <FormModule module={module}/>;
-        case ModuleType.INFO:
+        case ModuleType.DETAILS:
             return <DetailsModule module={module}/>;
         case ModuleType.COLLECTION:
             return <CollectionModule module={module}/>;

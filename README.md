@@ -26,3 +26,10 @@
 
     const { navigate } = useCrudNavigator();
     navigate({});
+
+
+## Builder
+
+- define fields
+- define modules
+- customizable (support different factories, titles)

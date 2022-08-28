@@ -3,7 +3,7 @@ export type ModuleNavigationType = "modal" | "page";
 export enum ModuleType {
     FORM,
     COLLECTION,
-    INFO,
+    DETAILS,
     ACTION,
     MAIN
 }
