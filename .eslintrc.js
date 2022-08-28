@@ -26,6 +26,7 @@ module.exports = {
         "import/no-extraneous-dependencies": "off",
         "react/require-default-props": "off",
         "react/button-has-type": "off",
-        "react/destructuring-assignment": "off"
+        "react/destructuring-assignment": "off",
+        "import/no-cycle": "off"
     }
 }

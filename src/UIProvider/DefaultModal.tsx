@@ -3,6 +3,7 @@ import {useDispatch, useState} from "wbox-context";
 import {State} from "../Data/State";
 import {useModule} from "../Modules/ModulesProvider";
 import {ModalActions} from "../Data/Reducers/ModalAction";
+import {Module} from "../Modules/Module";
 
 export function DefaultModal() {
     const state: State = useState();
@@ -40,8 +41,7 @@ export function DefaultModal() {
                 color: '#AAA',
                 fontWeight: 'bold'
             }} onClick={() => dispatch(ModalActions.close())} className="close">&times;</span>
-            <p>{module.name}</p>
+            <Module name={moduleName!} />
         </div>
-
     </div>
 }

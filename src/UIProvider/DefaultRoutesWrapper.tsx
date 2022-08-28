@@ -3,6 +3,7 @@ import React from "react";
 import {ModuleConfiguration} from "../Modules/ModuleConfiguration";
 import {useCrudNavigation} from "../Navigation/UseCrudNavigation";
 import {useModules} from "../Modules/ModulesProvider";
+import {Module} from "../Modules/Module";
 
 
 // TODO : TO BE REMOVED
@@ -10,8 +11,7 @@ function DummyPage({module}: { module: ModuleConfiguration }) {
     const {navigate} = useCrudNavigation();
     const modules = useModules();
     return <div>
-        <h1>{module.name}</h1>
-        <h1>{module.title}</h1>
+        <Module name={module.name} />
         <div>
             {
                 modules.filter(m => m.navigationType === 'page' && m.name !== module.name)
