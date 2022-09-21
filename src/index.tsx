@@ -6,9 +6,9 @@ import {ModuleType} from "./Modules/ModuleConfiguration";
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
+
 root.render(
-    <React.StrictMode>
-        <Crud modules={[
+    <Crud modules={[
             {
                 route: '/',
                 navigationType: 'page',
@@ -43,13 +43,52 @@ root.render(
                 title: 'Search',
                 type: ModuleType.COLLECTION,
                 factory: undefined,
-                options: {}
+                options: {
+                    providerOptions: {
+                        fields: [
+                            {name: 'id', title: '#'},
+                            {name: 'name', title: 'Name'},
+                        ],
+                        fetchOptions: {
+                            data: [
+                                {id: 1, name: 'Ali'},
+                                {id: 2, name: 'Huda'},
+                                {id: 3, name: 'Fatima'},
+                                {id: 4, name: 'Mohammed'},
+                                {id: 4, name: 'Test'},
+                            ]
+                        }
+                    },
+                    renderOptions: {}
+                }
             },
             {
                 name: 'create',
                 navigationType: 'modal',
                 type: ModuleType.FORM,
-                options: {},
+                options: {
+                    fields: {
+                        name: {
+                            type: 'text',
+                            options: {
+                                name: 'name'
+                            }
+                        },
+                        email: {
+                            type: 'text',
+                            options: {
+                                name: 'email',
+                                validationRules: '^ali@email.com$'
+                            }
+                        },
+                        phone: {
+                            type: 'text',
+                            options: {
+                                name: 'phone'
+                            }
+                        }
+                    }
+                },
                 title: 'Create'
             },
             {
@@ -67,5 +106,5 @@ root.render(
                 title: 'Delete'
             },
         ]}/>
-    </React.StrictMode>
 );
+

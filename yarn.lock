@@ -1715,7 +1715,7 @@
     lz-string "^1.4.4"
     pretty-format "^27.0.2"
 
-"@testing-library/jest-dom@^5.16.4", "@testing-library/jest-dom@^5.16.5":
+"@testing-library/jest-dom@^5.16.5":
   version "5.16.5"
   resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.16.5.tgz#3912846af19a29b2dbf32a6ae9c31ef52580074e"
   integrity sha512-N5ixQ2qKpi5OLYfwQmUb/5mSV9LneAcaUfp32pn4yCnpb8r/Yz0pXFPck21dIicKmi+ta5WRAknkZCfA8refMA==
@@ -1948,11 +1948,6 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.3.tgz#432c89796eab539b7a30b7b8801a727b585238a4"
   integrity sha512-LJgzOEwWuMTBxHzgBR/fhhBOWrvBjvO+zPteUgbbuQi80rYIZHrk1mNbRUqPZqSLP2H7Rwt1EFLL/tNLD1Xx/w==
 
-"@types/node@^16.11.38":
-  version "16.11.56"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.56.tgz#dcbb617669481e158e0f1c6204d1c768cd675901"
-  integrity sha512-aFcUkv7EddxxOa/9f74DINReQ/celqH8DiB3fRYgVDM2Xm5QJL8sl80QKuAnGvwAsMn+H3IFA6WCrQh1CY7m1A==
-
 "@types/node@^16.11.48":
   version "16.11.48"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.48.tgz#22d386f32b24fb644940b606ed393b56be7d8686"
@@ -1988,14 +1983,14 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
-"@types/react-dom@^18.0.0", "@types/react-dom@^18.0.5", "@types/react-dom@^18.0.6":
+"@types/react-dom@^18.0.0", "@types/react-dom@^18.0.6":
   version "18.0.6"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.6.tgz#36652900024842b74607a17786b6662dd1e103a1"
   integrity sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.0.11", "@types/react@^18.0.17":
+"@types/react@*", "@types/react@^18.0.17":
   version "18.0.17"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.17.tgz#4583d9c322d67efe4b39a935d223edcc7050ccf4"
   integrity sha512-38ETy4tL+rn4uQQi7mB81G7V1g0u2ryquNmsVIOKUAEIDK+3CUjZ6rSRpdvS99dNBnkLFL83qfmtLacGOTIhwQ==
@@ -7237,7 +7232,7 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-dom@^18.1.0, react-dom@^18.2.0:
+react-dom@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -7340,7 +7335,7 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react@^18.1.0, react@^18.2.0:
+react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -8378,11 +8373,6 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^4.7.3:
-  version "4.8.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.2.tgz#e3b33d5ccfb5914e4eeab6699cf208adee3fd790"
-  integrity sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==
-
 typescript@^4.7.4:
   version "4.7.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
@@ -8546,38 +8536,34 @@ watchpack@^2.4.0:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
 
-wbox-collections@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/wbox-collections/-/wbox-collections-0.1.7.tgz#62b20e907a8435330741620a9865863101a2fda0"
-  integrity sha512-jL0sCAfWBtduWIS8nAHrXTCdwkV330Gp92ieq5nRmyVB3+SobBE1HBPf4oIfKtz8kQ+rBnaKtanbqk6IUUdCVw==
+wb-collections@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/wb-collections/-/wb-collections-0.2.2.tgz#a41523b7f701293493107bf156de550452fa3e4e"
+  integrity sha512-otUGRhcWbPXbvtWLwFl66Se/eha5euSRc2SbOCYuXKHva76YF50L3/rJkSljvXvgT1uA56jNss0/Lb6GsmnSyQ==
+  dependencies:
+    react "^18.2.0"
+    react-dom "^18.2.0"
+    wb-core-provider "^0.4.2"
+
+wb-core-provider@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/wb-core-provider/-/wb-core-provider-0.4.2.tgz#7b3121f27439ed9079e46cb52ce65891042b5bd9"
+  integrity sha512-r34OAUpFWRRq9Y2E8bWx2PDZG/VxTJpjh96jjsTu1ggswDPyMrKkvNBCa1Qnon1ouSQ3nRQHwwW4uUL7VlsUkQ==
+
+wb-details@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/wb-details/-/wb-details-0.2.0.tgz#cb4f3dc2a50d1f1152d57913c10f958fe80eba3f"
+  integrity sha512-Y9ugArCe1vwsVnUkc/9zqR9ahIxlRaP6lmEhONmQfjERVj9lIV0Nh2gONteaHgngAutr/mbxWjfSGtG+1/yQRw==
+
+wb-forms@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/wb-forms/-/wb-forms-0.3.0.tgz#b222bf23dee077f3f99a1d90eeeb322fa22ea45e"
+  integrity sha512-P46ZvbJJbTk3xcdtVnKax57zs6oOZbTACMVbxGDrebsctp/cM3SivqM5dR1nkdNiP7MmYB3wRFjAbHPKIQme3w==
 
 wbox-context@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/wbox-context/-/wbox-context-0.3.3.tgz#08543f36cf11fffa4a40077fc9fc4470682c3de6"
   integrity sha512-4FBzy0R2APWwXLEXsak4PppxrXI6frZaeeFG/oWUP8ChbQTIEnx36hVgyV8xQI1qeasnL0tMr+F2FZaSSdPkrw==
-
-wbox-details-ui@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/wbox-details-ui/-/wbox-details-ui-0.1.6.tgz#657ee01cbbd1f38937ce7aaab2a0ea0ef2b0e766"
-  integrity sha512-czIZfsZoM+gt2drvjNOS1pvkya31eD1y97FgJWT6MkOzi0S9VqXR5gwRYpvDl+//zof3S+wSDCtLjz2v7RmQ6w==
-  dependencies:
-    "@testing-library/jest-dom" "^5.16.4"
-    "@testing-library/react" "^13.3.0"
-    "@testing-library/user-event" "^13.5.0"
-    "@types/jest" "^27.5.2"
-    "@types/node" "^16.11.38"
-    "@types/react" "^18.0.11"
-    "@types/react-dom" "^18.0.5"
-    react "^18.1.0"
-    react-dom "^18.1.0"
-    react-scripts "5.0.1"
-    typescript "^4.7.3"
-    web-vitals "^2.1.4"
-
-wbox-forms@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/wbox-forms/-/wbox-forms-0.2.2.tgz#b3f8ec1b253178b4bdbc77bf502fddcc403001a5"
-  integrity sha512-gpCbCz/EpAzwZmjRTHtVtORu5Ghc62DE9ajT8y2vqn9e8dEbckbFOrdHZWI6ofv0T4hCEj1qx03MdrfItbVcQQ==
 
 wbuf@^1.1.0, wbuf@^1.7.3:
   version "1.7.3"
@@ -8585,11 +8571,6 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   integrity sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==
   dependencies:
     minimalistic-assert "^1.0.0"
-
-web-vitals@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-2.1.4.tgz#76563175a475a5e835264d373704f9dde718290c"
-  integrity sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==
 
 webidl-conversions@^4.0.2:
   version "4.0.2"

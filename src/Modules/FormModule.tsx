@@ -1,4 +1,5 @@
-import React from "react";
+import {defaultFieldsMap, DefaultFormFactory} from "wb-forms";
+import {FormOptions} from "wb-forms/dist/Factory/DefaultFormFactoryConfiguration";
 import {ModuleConfiguration} from "./ModuleConfiguration";
 
 interface Props {
@@ -6,7 +7,7 @@ interface Props {
 }
 
 export function FormModule({module}: Props) {
-    return <div>
-        <h1>Form Module: {module.name} - {module.title}</h1>
-    </div>
+    const formFactory = new DefaultFormFactory(defaultFieldsMap);
+    const configuration = module.options;
+    return formFactory.create(configuration as FormOptions);
 }

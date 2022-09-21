@@ -1,4 +1,4 @@
-import React from "react";
+import {DefaultCollectionFactory} from "wb-collections";
 import {ModuleConfiguration} from "./ModuleConfiguration";
 
 interface Props {
@@ -6,5 +6,6 @@ interface Props {
 }
 
 export function CollectionModule({module}: Props) {
-    return <h1>Collection Module: {module.name} - {module.title}</h1>
+    const factory = new DefaultCollectionFactory();
+    return factory.create(module.options as any);
 }

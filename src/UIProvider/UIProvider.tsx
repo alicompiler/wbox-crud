@@ -1,9 +1,10 @@
 import React, {ReactElement, useContext} from "react";
-import {FormFactory} from "wbox-forms/dist/Factory/FormFactory";
-import {CollectionFactory, DefaultCollectionFactory} from "wbox-collections";
-import {DefaultFormFactory} from "wbox-forms";
+import {CollectionFactory, DefaultCollectionFactory} from "wb-collections";
+import {DefaultFormFactory, FormFactory} from "wb-forms";
 import {DefaultModal} from "./DefaultModal";
 import {DefaultRoutesWrapper} from "./DefaultRoutesWrapper";
+import {DefaultTitleComponent} from "./DefaultTitleComponent";
+import {ModuleConfiguration} from "../Modules/ModuleConfiguration";
 
 export interface IUIProvider {
     formFactory: FormFactory<unknown>;
@@ -12,6 +13,7 @@ export interface IUIProvider {
     ioActionFactory: unknown;                           // TODO : WRITE MODULE FOR NETWORK ACTIONS
     routesComponent: () => ReactElement;
     modalComponent: () => ReactElement;
+    titleComponent: (module: ModuleConfiguration) => ReactElement;
 }
 
 const defaults: IUIProvider = {
@@ -21,6 +23,7 @@ const defaults: IUIProvider = {
     ioActionFactory: {},
     routesComponent: () => <DefaultRoutesWrapper/>,
     modalComponent: () => <DefaultModal/>,
+    titleComponent: (module) => <DefaultTitleComponent module={module}/>
 }
 
 export const UIContext = React.createContext<IUIProvider>(defaults);
@@ -47,12 +50,14 @@ export const useUIFactory = (): UseUIFactoryResult => {
 export interface UseUIComponentResult {
     modalComponent: () => ReactElement;
     routesComponent: () => ReactElement;
+    titleComponent: (module: ModuleConfiguration) => ReactElement;
 }
 
 export const useUIComponent = (): UseUIComponentResult => {
     const context = useContext(UIContext);
     return {
         modalComponent: context.modalComponent,
-        routesComponent: context.routesComponent
+        routesComponent: context.routesComponent,
+        titleComponent: context.titleComponent
     };
 }
